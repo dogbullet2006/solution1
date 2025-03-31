@@ -31,7 +31,10 @@ function App() {
               <p>{user.email}</p>
               <p>{user.username}</p>
               <p>{user.name}</p>
-              <p>{Object.values(user.address).join(", ")}</p>
+              <p>
+                {user.address.zipcode}, {user.address.city},
+                {user.address.street}
+              </p>
               <p>{user.phone}</p>
               <p>{user.website}</p>
             </li>
